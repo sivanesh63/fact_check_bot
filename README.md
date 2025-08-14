@@ -8,30 +8,7 @@ A modular, LLM-powered fact-checking bot that takes a claim, verifies it using o
 
 ## 📂 Project Structure
 
-project-root/
-├── config/
-│ ├── settings.py # Centralized configuration
-│ └── prompts.yaml # Prompt templates & examples
-├── src/
-│ ├── fact_checker.py # Core fact-checking pipeline
-│ ├── prompt_chains.py # LLM prompt chaining logic
-│ ├── search_tools.py # Evidence retrieval & web search
-│ ├── utils.py # Logging, cleaning, caching, helpers
-│ └── ui/
-│ ├── cli.py # Command-line interface
-│ ├── streamlit_app.py
-│ └── gradio_app.py
-├── tests/
-│ ├── test_fact_checker.py
-│ └── test_search_tools.py
-├── examples/
-│ ├── example_queries.txt
-│ └── demo_notebook.ipynb
-├── data/ # Optional: cached evidence / embeddings
-├── requirements.txt
-├── .env.example
-└── README.md
-
+<img width="498" height="480" alt="image" src="https://github.com/user-attachments/assets/9acfc7f5-1f14-4bba-bef6-ecf13c393910" />
 
 
 ## 🚀 Setup & Installation
@@ -172,5 +149,6 @@ Build CLI interface
 Add Streamlit / Gradio UI
 
 Write unit tests & run examples
+
 
 Optionally, add caching & vector embeddings
