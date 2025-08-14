@@ -1,0 +1,36 @@
+# config/prompts.yaml
+
+initial_response:
+  description: "Generate a preliminary answer to the user's claim"
+  template: |
+    You are a fact-checking assistant.
+    User claim: "{claim}"
+    Please provide a concise initial answer without making assumptions.
+
+assumption_extraction:
+  description: "Extract assumptions from the initial response"
+  template: |
+    Extract all implicit assumptions from the following response:
+    Response: "{initial_response}"
+    List each assumption clearly.
+
+verification_loop:
+  description: "Check if each assumption is true, false, or uncertain"
+  template: |
+    For each assumption:
+    {assumptions_list}
+    Check against reliable sources if the assumption is True, False, or Uncertain.
+
+evidence_gathering:
+  description: "Use web search to find supporting or contradicting evidence"
+  template: |
+    For the following assumptions:
+    {assumptions_list}
+    Search the web and provide URLs, snippets, and brief evidence summary.
+
+final_synthesis:
+  description: "Generate the final verified response incorporating evidence"
+  template: |
+    Based on the verification and gathered evidence:
+    {evidence_summary}
+    Provide a final, concise, and accurate response to the user's claim.

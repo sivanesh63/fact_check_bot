@@ -1,0 +1,37 @@
+# Core
+python-dateutil
+requests
+python-dotenv
+tqdm
+
+# LangChain & AI
+langchain
+langchain-community
+transformers
+sentence-transformers
+torch
+accelerate
+
+# Web Search & Scraping
+beautifulsoup4
+lxml
+duckduckgo-search
+selenium
+aiohttp
+
+# NLP Utilities
+spacy
+nltk
+
+# Semantic Search / Vector DB
+faiss-cpu
+
+# Database
+sqlalchemy
+psycopg2-binary
+elasticsearch
+
+# UI
+streamlit
+gradio
+rich
